@@ -10,8 +10,11 @@ public class NumbersAndOperations {
         int numberB;
 
         // Tu código aquí
+        numberA= 23;
+        numberB= 40;
+        int result= numberA + numberB;
 
-        return 0; // Sustituye el 0 por result
+        return result; // Sustituye el 0 por result
     }
 
     /**
@@ -21,12 +24,14 @@ public class NumbersAndOperations {
      * @return La variable result, solo puede ser float.
      */
     public float division(){
-        int numberA = 10;
-        int numberB = 3;
+        int numberA= 10;
+        int numberB= 3;
 
         // Tu código aquí
+        float result2;
+        result2 = (float)numberA / numberB;
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        return result2; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -36,12 +41,13 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int modulo(){
-        int numberA = 1;
-        int numberB = 1;
+        int numberA = 3;
+        int numberB = 2;
 
         // Tu código aquí
+        int result= numberA / numberB;
 
-        return numberA % numberB; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
+        return result; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
 
     /**
@@ -51,9 +57,10 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int randomizer(){
-        int randomNumber = 9999;
+
 
         // Tu código aquí
+        int randomNumber = (int)(Math.random()* 101);
 
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
@@ -69,21 +76,24 @@ public class NumbersAndOperations {
         int numberB = 3;
 
         // Tu código aquí
+        int result= (int) Math.pow(numberB, numberA);
 
-        return 0; // sustituye el 0 por la variable result
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
      * Reto 6: Redondeo
      * Asigna un NUEVO valor a 'decimalNumber' para que, al redondearlo al entero más cercano, el resultado sea 10.
-     * Piensa que estamos utilizando Math.round() 🤔
+     * Piensa que estamos utilizando Math. Round() 🤔
      *
      * @return No modifiques el return
      */
+
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
         double decimalNumber = 0.0;
 
         // Tu código aquí
+        decimalNumber=9.8;
 
         return Math.round(decimalNumber); // No hace falta modificar el return. Ya tu sabes... 😉
     }
@@ -96,11 +106,12 @@ public class NumbersAndOperations {
      * @return La variable finalResult.
      */
     public int combinedOperations() {
-        int initialValue = 7;
 
         // Tu código aquí
+        int initialValue = 7;
+        int finalResult = (int)(initialValue + 5) * 13;
 
-        return 0; // Sustituye el 0 por finalResult
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {
